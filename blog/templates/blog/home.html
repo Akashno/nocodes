@@ -15,7 +15,7 @@
         </div>
         <div class="row blog-container">
             {% for post in posts|slice:"0:5" %}
-                <div class="col mb-5 blog-wrapper">
+                <div class="col mb-5 blog-wrapper ">
                     <a href="{% url 'blog_post' post.id %}"><img src="{{post.image.url}}" class="blog-img mb-4" alt="noimage"></a>
                     <div>
                        <a class="text-reset text-decoration-none" href="{% url 'blog_post' post.id %}">
@@ -48,8 +48,8 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md-3  col-sm-12 d-md-block d-lg-block  d-sm-flex  justify-content-center align-items-center">
-                <div class="small-box ml-md-3 ml-sm-5 text-light     ">
+            <div class="col-md-3  col-sm-12 ">
+                <div class="small-box  text-light  ml-md-0 ml-sm-5   ">
                      <h4 class="text-center mt-4">Follow us</h4>
                     <button class="btn btn-info mx-auto d-block w-75">
                         <span>Get Updates</span>
