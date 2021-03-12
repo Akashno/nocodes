@@ -1,0 +1,39 @@
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+<form class="" method="POST" action="{% url 'account_login' %}">
+<<<<<<< HEAD
+=======
+
+<form class="" method="POST" action="{% url 'account_login' %}">
+
+<form class="login" method="POST" action="{% url 'account_login' %}">
+
+>>>>>>> b2eac3ff19232e6a2de7d22b0288c79e18f64cec
+=======
+
+<form class="login" method="POST" action="{% url 'account_login' %}">
+
+>>>>>>> b2eac3ff19232e6a2de7d22b0288c79e18f64cec
+  {% csrf_token %}
+  {{ form|crispy }}
+  {% if redirect_field_value %}
+  <input type="hidden"  name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+
+  <a class="button secondaryAction btn border border-info text-info " href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+<<<<<<< HEAD
+=======
+
+  <a class="button secondaryAction btn border border-info text-info " href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+
+  <a class="button secondaryAction btn border border-info text-info" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+
+>>>>>>> b2eac3ff19232e6a2de7d22b0288c79e18f64cec
+=======
+
+  <a class="button secondaryAction btn border border-info text-info" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+
+>>>>>>> b2eac3ff19232e6a2de7d22b0288c79e18f64cec
+  <button class="primaryAction btn border border-success text-success"  type="submit">{% trans "Sign In" %}</button>
+</form>

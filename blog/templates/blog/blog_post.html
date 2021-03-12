@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Blog Post
+{% endblock title %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'css/shapes.css' %}">
+{% endblock style %}
+{% block content %}
+{% include 'blog/!shapes.html'  %}
+<div class="container-fluid p-3 ">
+    <div class="row">
+
+        <div class="col-md-8 col-sm-12">
+            <div class="container post-container mt-5 px-5 pt-5 text-light ">
+                 <div class="d-flex justify-content-between">
+                    <h2 class="post-title">{{post.title}}</h2>
+                    <p class="post-date d-flex align-items-center px-3 ">{{post.date_created.date}}</p>
+                 </div>
+                <div class="d-flex justify-content-between">
+                    <h5 class=" post-description text-secondary mb-5">{{post.description}}</h5>
+                    <span class="post-author text-secondary">author: @{{post.author}}</span>
+                </div>
+                <div class="sections-wrapper pb-5  ">
+                {% if sections %}
+                {% for section in sections %}
+                <div class="section-container ">
+                    <h6 class="section-title ">
+                        {% if section.title %}
+                        {{section.title}}
+                        {% else %}
+
+                        {% endif %}
+                    </h6>
+                    <p class="section-body mb-5">
+                        {{section.body}}
+                    </p>
+                    {% if section.image.url is not none %}
+                    <img src="{{section.image.url}}" alt="" class="section-img">
+                        {% else %}
+                        {% endif %}
+
+                </div>
+                {% endfor %}
+                    {% else %}
+                    <div class="container d-flex justify-content-center align-items-center">
+                        <i class="fa fa-cog fa-spin fa-5x" aria-hidden="true"></i>
+                    <span class="h3 pl-2">Blog under Construction</span>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-0">
+            <div class="container  mt-5 px-5 pt-3 text-light ">
+                {% if sections %}
+                <div class="row ">
+                    <div class="col mt-5  ">
+
+                    <form action="" method="POST" id="comment-form">
+                        <input type="hidden" name="post_id" id="post_id" value="{{post.id}}">
+                        {% csrf_token %}
+                         {% if not request.user.is_authenticated %}
+                        <a href="{% url 'account_login' %}"><span class="badge badge-secondary">login</span></a> to add comments
+                            {% else %}
+                        <div class="add-comment-container  d-flex">
+                            <textarea placeholder="Add comment" type="text" name="comment" id="comment" class=" mb-2  " required></textarea>
+                            <button  id="submit"><i class="fa fa-comment fa-2x text-light"></i>
+                            </button>
+                        </div>
+
+                        {% endif %}
+                        </form>
+
+
+
+                        <h5>Top Comments...</h5>
+                        <div class="comment-wrapper">
+
+                        {% for comment in comments %}
+                            <div class="comment-container p-4 mb-2" id="comment-container">
+                                <div class="mb-2 d-flex justify-content-between">
+                                    <span class="text-secondary">{{comment.date_created.date}} at {{comment.date_created.time}}</span>
+
+                                </div>
+                                <div>
+                                    <p>{{comment.body}}</p><span class="text-secondary d-block  float-right ">-{{comment.user}}</span>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        </div>
+
+                    </div>
+                </div>
+                {% endif %}
+
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+{% block script %}
+<script src="{% static 'js/blog_post_ajax.js' %}"></script>
+{% endblock script %}

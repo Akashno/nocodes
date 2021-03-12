@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Home {% endblock title %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+{% endblock style %}
+
+{% block content %}
+
+<div class="rainbow-bar"></div>
+    <div class="container-fluid p-0 m-0">
+        <div class="row blog-title mb-3 mx-0">
+            <div class="col pl-5  "><h4>Latest Blogs</h4></div>
+        </div>
+        <div class="row blog-container">
+            {% for post in posts|slice:"0:5" %}
+                <div class="col mb-5 blog-wrapper">
+                    <a href="{% url 'blog_post' post.id %}"><img src="{{post.image.url}}" class="blog-img mb-4" alt="noimage"></a>
+                    <div>
+                       <a class="text-reset text-decoration-none" href="{% url 'blog_post' post.id %}">
+                       <div class="blog-details  pt-2">
+                            <p class=" px-3 ">{{post.title}}</p>
+                            <div class="d-flex justify-content-between px-3 blog-mini  ">
+                                <span>{{post.date_created.date}}</span>
+                                <span>@{{post.author}}</span>
+                            </div>
+                        </div>
+                       </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9  col-sm-12">
+                <div class="intro-box  p-4 w-sm-50 mb-2 ">
+                    <h4>Hey!!!</h4>
+                    <p class="pt-sm-3 pt-md-3">
+                        I am just a 22-year-old who is living a life as  a web developer and trying to be a  better human.
+                        <br>
+                        My blogs contain my knowledge and thoughts about web development and my perspective about life  (yeah a little
+                        philosophical). <br>
+                        My main goal is to give an overview of the concepts related to web development so that people won't
+                        have to spend hours trying to know how things work. And here you will find the most required skills and concepts
+                        which will make you a better web developer
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3  col-sm-12 d-md-block d-lg-block  d-sm-flex  justify-content-center align-items-center">
+                <div class="small-box ml-md-3 ml-sm-5 text-light     ">
+                     <h4 class="text-center mt-4">Follow us</h4>
+                    <button class="btn btn-info mx-auto d-block w-75">
+                        <span>Get Updates</span>
+                        <i class="fa fa-envelope " aria-hidden="true"></i>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
