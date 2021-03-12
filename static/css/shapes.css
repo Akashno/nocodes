@@ -1,0 +1,106 @@
+.shape1{
+    /* blue */
+    position: absolute;
+    width: 89px;
+    height: 93px;
+    left: 19px;
+    top: 209px;
+    border: 8px solid rgba(16, 84, 146, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    }
+.shape01{
+    position: absolute;
+    width: 89px;
+    height: 93px;
+    left: 1474px;
+    top: 707px;
+    border: 8px solid rgba(16, 84, 146, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    }
+
+.shape2{
+    /* red */
+    position: absolute;
+    width: 58.16px;
+    height: 66.46px;
+    left: 17.77px;
+    top: 491.67px;
+    border: 9px solid rgba(156, 29, 44, 0.5);
+    box-sizing: border-box;
+    border-radius: 27px;
+    transform: rotate(-14.45deg);
+}
+.shape02{
+    position: absolute;
+    width: 58.16px;
+    height: 66.46px;
+    left: 1607.77px;
+    top: 311.67px;
+    border: 9px solid rgba(156, 29, 44, 0.5);
+    box-sizing: border-box;
+    border-radius: 27px;
+    transform: rotate(-14.45deg);
+}
+
+.shape3{
+    /* violet */
+    position: absolute;
+    width: 57px;
+    height: 56px;
+    left: 47px;
+    top: 590px;
+    border: 9px solid rgba(149, 31, 168, 0.5);
+    box-sizing: border-box;
+}
+.shape03{
+    position: absolute;
+    width: 57px;
+    height: 56px;
+    left: 1453px;
+    top: 454px;
+    border: 9px solid rgba(149, 31, 168, 0.5);
+    box-sizing: border-box;
+}
+.shape4{
+    /* green */
+    position: absolute;
+    width: 68px;
+    height: 71px;
+    left: 181px;
+    top: 520px;
+    border: 9px solid rgba(114, 196, 94, 0.5);
+    box-sizing: border-box;
+    border-radius:50%;
+}
+.shape04{
+    position: absolute;
+    width: 68px;
+    height: 71px;
+    left: 1451px;
+    top: 200px;
+    border: 9px solid rgba(114, 196, 94, 0.5);
+    box-sizing: border-box;
+    border-radius:50%;
+}
+.shape5{
+    position: absolute;
+    width: 70.18px;
+    height: 72.02px;
+    left: 183.71px;
+    top: 412.18px;
+    border: 5px solid rgba(205, 177, 28, 0.5);
+    box-sizing: border-box;
+    transform: rotate(31.57deg);
+}
+.shape05{
+    position: absolute;
+    width: 70.18px;
+    height: 72.02px;
+    left: 1583.71px;
+    top: 612.18px;
+    border: 5px solid rgba(205, 177, 28, 0.5);
+    box-sizing: border-box;
+    transform: rotate(31.57deg);
+}
