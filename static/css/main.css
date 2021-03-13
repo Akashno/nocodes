@@ -112,7 +112,6 @@
         font-size:12px;
     }
     .sections-wrapper{
-
         max-height:65vh;
         overflow-x:auto;
         overflow-y:auto;
@@ -123,7 +122,6 @@
         height:auto;
     }
     .comment-wrapper{
-
         height:400px;
         overflow:auto;
     }
@@ -131,7 +129,6 @@
         font-size:12px;
         background-color:var(--background-secondary);
         border-radius:10px;
-
     }
     .add-comment-container textarea{
         padding-top:8px;

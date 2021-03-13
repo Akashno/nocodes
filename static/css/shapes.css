@@ -13,8 +13,8 @@
     position: absolute;
     width: 89px;
     height: 93px;
-    left: 1474px;
-    top: 707px;
+    left: 1104px;
+    top: 491px;
     border: 8px solid rgba(16, 84, 146, 0.5);
     box-sizing: border-box;
     border-radius: 10px;
@@ -25,18 +25,19 @@
     position: absolute;
     width: 58.16px;
     height: 66.46px;
-    left: 17.77px;
+    left: 1257.77px;
     top: 491.67px;
     border: 9px solid rgba(156, 29, 44, 0.5);
     box-sizing: border-box;
     border-radius: 27px;
     transform: rotate(-14.45deg);
+
 }
 .shape02{
     position: absolute;
     width: 58.16px;
     height: 66.46px;
-    left: 1607.77px;
+    left: 1507.77px;
     top: 311.67px;
     border: 9px solid rgba(156, 29, 44, 0.5);
     box-sizing: border-box;
@@ -50,7 +51,7 @@
     width: 57px;
     height: 56px;
     left: 47px;
-    top: 590px;
+    top: 390px;
     border: 9px solid rgba(149, 31, 168, 0.5);
     box-sizing: border-box;
 }
@@ -58,8 +59,8 @@
     position: absolute;
     width: 57px;
     height: 56px;
-    left: 1453px;
-    top: 454px;
+    left: 1153px;
+    top: 354px;
     border: 9px solid rgba(149, 31, 168, 0.5);
     box-sizing: border-box;
 }
@@ -68,8 +69,8 @@
     position: absolute;
     width: 68px;
     height: 71px;
-    left: 181px;
-    top: 520px;
+    left: 631px;
+    top: 320px;
     border: 9px solid rgba(114, 196, 94, 0.5);
     box-sizing: border-box;
     border-radius:50%;
@@ -78,7 +79,7 @@
     position: absolute;
     width: 68px;
     height: 71px;
-    left: 1451px;
+    left: 1251px;
     top: 200px;
     border: 9px solid rgba(114, 196, 94, 0.5);
     box-sizing: border-box;
@@ -88,8 +89,8 @@
     position: absolute;
     width: 70.18px;
     height: 72.02px;
-    left: 183.71px;
-    top: 412.18px;
+    left: 283.71px;
+    top: 312.18px;
     border: 5px solid rgba(205, 177, 28, 0.5);
     box-sizing: border-box;
     transform: rotate(31.57deg);
@@ -99,7 +100,7 @@
     width: 70.18px;
     height: 72.02px;
     left: 1583.71px;
-    top: 612.18px;
+    top: 312.18px;
     border: 5px solid rgba(205, 177, 28, 0.5);
     box-sizing: border-box;
     transform: rotate(31.57deg);

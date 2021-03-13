@@ -19,7 +19,7 @@ def set_author_first_comment(sender, instance, created, **kwargs):
     if created:
         admin = User.objects.get(username='admin')
         print(instance.author.name)
-        comment = Comment(post=instance,user=admin,body='please comment your doubts and issues here')
+        comment = Comment(post=instance,user=admin,body='please feel free to share your thoughts on this story')
         print(comment)
 
         comment.save()

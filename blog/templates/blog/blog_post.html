@@ -9,8 +9,9 @@ Blog Post
 <link rel="stylesheet" href="{% static 'css/shapes.css' %}">
 {% endblock style %}
 {% block content %}
-{% include 'blog/!shapes.html'  %}
+
 <div class="container-fluid p-3 ">
+    {% include 'blog/!shapes.html'  %}
     <div class="row">
 
         <div class="col-md-8 col-sm-12">

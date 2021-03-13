@@ -1,4 +1,4 @@
-console.log('inside jquery script');
+
 
 $('#search').on('input',function(){
     $.ajax({
