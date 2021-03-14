@@ -13,5 +13,5 @@ This blog gives an overview of various concepts in web development.
 
 Ajax used for filtering blogs
 
-![searching-nocodes](https://user-images.githubusercontent.com/52347258/111073146-9ec46800-8503-11eb-865c-0d73e8704a53.gif)
+   ![searching-nocodes](https://user-images.githubusercontent.com/52347258/111073146-9ec46800-8503-11eb-865c-0d73e8704a53.gif)
 
