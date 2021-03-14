@@ -15,3 +15,5 @@ Ajax used for filtering blogs
 
    ![searching-nocodes](https://user-images.githubusercontent.com/52347258/111073146-9ec46800-8503-11eb-865c-0d73e8704a53.gif)
 
+Ajax used for commenting on blog
+   ![comment-nocodes](https://user-images.githubusercontent.com/52347258/111073387-7b4ded00-8504-11eb-8f74-db7640bfc9ce.gif)
