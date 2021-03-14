@@ -8,4 +8,3 @@ The blog is to give an overview of various concepts in web development.
 
 
 
-![nocodesgif](https://user-images.githubusercontent.com/52347258/111062741-d239cf00-84d0-11eb-8c4d-4df72e12dfac.gif)
