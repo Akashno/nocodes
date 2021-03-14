@@ -1,7 +1,7 @@
 
 
 # nocodes
-This is a simple blog project built using Django , Bootstrap4 , Jquery and Ajax
+A basic blog app where i used Django as the backend , Bootstrap4 for responsive styling , jQuery to make my app interactive and ajax to make searching and form submissions for  a better user experience.
 
 
 ![image](https://user-images.githubusercontent.com/52347258/111073217-eea32f00-8503-11eb-8ac1-db7c926fdc38.png)
