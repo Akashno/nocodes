@@ -67,7 +67,7 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 SITE_ID = 1
-ACCOUNT_EMAIL_VERIFICATION = "none"
+ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 ACCOUNT_EMAIL_REQUIRED = True
 LOGIN_REDIRECT_URL = '/'
 
@@ -77,8 +77,8 @@ LOGIN_REDIRECT_URL = '/'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = DEFAULT_FROM_EMAIL = 'fakeemailadderss'
-EMAIL_HOST_PASSWORD = 'fakepassword'
+EMAIL_HOST_USER = DEFAULT_FROM_EMAIL = 'noakashno@gmail.com'
+EMAIL_HOST_PASSWORD = 'arjun777'
 
 ROOT_URLCONF = 'nocodes.urls'
 
