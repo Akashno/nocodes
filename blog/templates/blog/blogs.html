@@ -8,7 +8,7 @@
 {% endblock style %}
 
 {% block content %}
-<div class="container-fluid mt-5">
+<div class="container-fluid mt-5 pb-5">
     {% include 'blog/!filter.html'  %}
 
     <div id="wrapper">
@@ -21,14 +21,14 @@
             <a href="{% url 'blog_post' post.id %}" class="text-decoration-none text-reset">
             <div class="container blogs-container mt-5 px-4 pt-3 text-light ">
                  <div class="row">
-                    <div class="col-md-8 h3  post-title">{{post.title}}</div>
+                    <div class="col-md-8 h5  post-title">{{post.title}}</div>
                     <div class="col-md-4       text-md-right text-sm-left p-2 ">
                         <span class="post-date  px-3">{{post.date_created.date}}</span>
                     </div>
                  </div>
 
                     <div class="row">
-                        <div class="col-md-8  post-description text-secondary mb-1">{{post.description}}</div>
+                        <div class="col-md-8  post-description text-secondary mb-1 h6 mb-4">{{post.description}}</div>
                         <div class="col-md-4 text-secondary text-md-right text-sm-left mb-2">author: @{{post.author}}</div>
                     </div>
 

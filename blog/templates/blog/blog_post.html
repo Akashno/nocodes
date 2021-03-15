@@ -11,7 +11,6 @@ Blog Post
 {% block content %}
 
 <div class="container-fluid p-3 ">
-    {% include 'blog/!shapes.html'  %}
     <div class="row">
 
         <div class="col-md-8 col-sm-12">
@@ -44,7 +43,7 @@ Blog Post
                         {{section.body}}
                     </p>
                     {% if section.image.url is not none %}
-                    <img src="{{section.image.url}}" alt="" class="section-img">
+                    <img src="{{section.image.url}}" alt="" class="section-img ">
                         {% else %}
                         {% endif %}
 

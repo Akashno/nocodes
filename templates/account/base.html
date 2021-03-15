@@ -22,7 +22,7 @@
     {% block body %}
     {% include 'blog/!navbar.html'  %}
     {% if messages %}
-    <div class="container  p-3">
+    <div class="container-fluid  p-3">
       <strong>Messages:</strong>
       <ul>
         {% for message in messages %}
@@ -32,7 +32,7 @@
     </div>
     {% endif %}
 
-    <div class="container d-flex text-light mt-3">
+    <div class="container-fluid d-flex text-light mt-3">
       <ul class="d-flex p-0 mb-5">
         {% if user.is_authenticated %}
         <li class="mr-4 btn border "><a href="{% url 'account_email' %}">Change E-mail</a></li>

@@ -4,6 +4,7 @@ from django.shortcuts import render
 
 from blog.filters import ModelFilter
 from blog.models import Post, Section, Comment
+from nocodes import settings
 
 
 def home(request):
