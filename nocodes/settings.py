@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = '6ztp4fha=1moeyp&i^m)y-sks26wpun2u5(+l#k0y#arc7g9n%'
+SECRET_KEY = 'some secret key'
 
 # os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -67,7 +67,7 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 SITE_ID = 1
-ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+ACCOUNT_EMAIL_VERIFICATION = "none"
 ACCOUNT_EMAIL_REQUIRED = True
 LOGIN_REDIRECT_URL = '/'
 
